@@ -58,6 +58,19 @@
                 </ol>
             </div>
         </div>
+        
+        <div class="card mt-4">
+            <div class="card-body">
+                <h2 class="card-title">How My Cloud Resume Updates Automatically</h2>
+                <p>I’ve integrated GitHub Actions into this project to automate the deployment process whenever I update my code. Here’s how it works:</p>
+                <p>CI/CD Workflow Overview</p>
+                <ol>
+                    <li><strong>Code is pushed to GitHub</strong> This triggers the GitHub Actions workflow.</li>
+                    <li><strong>GitHub Actions deploys changes to S3</strong> The workflow syncs updated files to the AWS S3 bucket.</li>
+                    <li><strong>CloudFront cache is invalidated</strong> This ensures the latest version of my website is served to visitors.</li>
+                </ol>
+            </div>
+        </div>
 
         <!-- Challenges & Lessons Learned -->
         <div class="card mt-4">
@@ -79,7 +92,6 @@
                 <p>Some features I plan to add:</p>
                 <ul>
                     <li>Logging visitor details (e.g., country, device type).</li>
-                    <li>Deploying the website using CI/CD with GitHub Actions.</li>
                     <li>Adding a contact form that sends messages via AWS SES.</li>
                 </ul>
             </div>
